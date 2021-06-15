@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">大学生の散財簿</string>
+    <string name="main">Main Activity</string>
+    <string name="move">MOVE</string>
+    <string name="input">Input Activity</string>
+    <string name="return_sub">RETURN</string>
+</resources>

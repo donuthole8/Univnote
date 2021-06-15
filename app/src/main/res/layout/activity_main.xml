@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="163dp"
+        android:layout_height="65dp"
+        android:onClick="ResetMoney"
+        android:text="リセット"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gambling" />
+
+    <ImageView
+        android:id="@+id/gambling"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/gambling_sel"
+        android:onClick="Gambling"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/alcohol"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <ImageView
+        android:id="@+id/alcohol"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/alcohol_sel"
+        android:onClick="Drinking"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintEnd_toStartOf="@+id/gambling"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smoking"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <TextView
+        android:id="@+id/myMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥0"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/smoking"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/smoking_sel"
+        android:onClick="Smoking"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/myMoney"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
